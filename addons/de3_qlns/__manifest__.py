@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "nhan_su",
+    'name': "de3_qlns",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -10,7 +10,7 @@
         Long description of module's purpose
     """,
 
-    'author': "My Company",
+    'author': "Bee",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -27,10 +27,6 @@
         'security/ir.model.access.csv',
         'views/nhan_vien.xml',
         'views/phong_ban.xml',
-        'views/lich_lam_viec.xml',
-        'views/chuc_vu.xml',
-        'views/cap_bac.xml',
-        'views/quy_trinh_dao_tao.xml',
         'views/menu.xml',
     ],
     # only loaded in demonstration mode

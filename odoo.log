@@ -1,0 +1,308 @@
+2025-02-19 02:43:07,961 1520 INFO ? odoo: Odoo version 15.0 
+2025-02-19 02:43:07,962 1520 INFO ? odoo: Using configuration file at /home/gtbee/odoo-fitdnu/odoo.conf 
+2025-02-19 02:43:07,962 1520 INFO ? odoo: addons paths: ['/home/gtbee/odoo-fitdnu/odoo/addons', '/home/gtbee/.local/share/Odoo/addons/15.0', '/home/gtbee/odoo-fitdnu/addons'] 
+2025-02-19 02:43:07,962 1520 INFO ? odoo: database: odoo@localhost:5432 
+2025-02-19 02:43:08,169 1520 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-02-19 02:43:08,488 1520 INFO ? odoo.service.server: HTTP service (werkzeug) running on GTBee.localdomain:8069 
+2025-02-19 02:43:08,489 1520 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 02:43:08,489 1520 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 02:44:50,771 1520 INFO ? odoo.service.server: Initiating server reload 
+2025-02-19 03:02:49,614 1914 INFO ? odoo: Odoo version 15.0 
+2025-02-19 03:02:49,614 1914 INFO ? odoo: Using configuration file at /home/gtbee/odoo-fitdnu/odoo.conf 
+2025-02-19 03:02:49,614 1914 INFO ? odoo: addons paths: ['/home/gtbee/odoo-fitdnu/odoo/addons', '/home/gtbee/.local/share/Odoo/addons/15.0', '/home/gtbee/odoo-fitdnu/addons'] 
+2025-02-19 03:02:49,614 1914 INFO ? odoo: database: odoo@localhost:5433 
+2025-02-19 03:02:49,768 1914 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-02-19 03:02:49,794 1914 CRITICAL ? odoo.modules.module: Couldn't load module web 
+2025-02-19 03:02:49,794 1914 CRITICAL ? odoo.modules.module: No module named 'OpenSSL' 
+2025-02-19 03:02:49,794 1914 ERROR ? odoo.service.server: Failed to load server-wide module `web`.
+The `web` module is provided by the addons found in the `openerp-web` project.
+Maybe you forgot to add those addons in your addons_path configuration. 
+Traceback (most recent call last):
+  File "/home/gtbee/odoo-fitdnu/odoo/service/server.py", line 1210, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/home/gtbee/odoo-fitdnu/odoo/modules/module.py", line 407, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/home/gtbee/odoo-fitdnu/addons/web/__init__.py", line 4, in <module>
+    from . import controllers
+  File "/home/gtbee/odoo-fitdnu/addons/web/controllers/__init__.py", line 4, in <module>
+    from . import main
+  File "/home/gtbee/odoo-fitdnu/addons/web/controllers/main.py", line 34, in <module>
+    from odoo.addons.base.models.ir_qweb import render as qweb_render
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/__init__.py", line 23, in <module>
+    from . import ir_mail_server
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/ir_mail_server.py", line 19, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2025-02-19 03:02:49,797 1914 CRITICAL ? odoo.modules.module: Couldn't load module base 
+2025-02-19 03:02:49,797 1914 CRITICAL ? odoo.modules.module: No module named 'OpenSSL' 
+2025-02-19 03:02:49,797 1914 ERROR ? odoo.service.server: Failed to load server-wide module `base`. 
+Traceback (most recent call last):
+  File "/home/gtbee/odoo-fitdnu/odoo/service/server.py", line 1210, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/home/gtbee/odoo-fitdnu/odoo/modules/module.py", line 407, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/__init__.py", line 23, in <module>
+    from . import ir_mail_server
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/ir_mail_server.py", line 19, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2025-02-19 03:02:49,799 1914 INFO ? odoo.service.server: HTTP service (werkzeug) running on GTBee.localdomain:8069 
+2025-02-19 03:02:49,799 1914 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 03:02:49,800 1914 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 03:04:34,291 1914 INFO ? odoo.http: HTTP Configuring static files 
+2025-02-19 03:04:34,294 1914 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 03:04:34,294 1914 INFO ? odoo.http: Generating nondb routing 
+2025-02-19 03:04:34,299 1914 INFO ? werkzeug: 127.0.0.1 - - [19/Feb/2025 03:04:34] "[33mGET / HTTP/1.1[0m" 404 - 0 0.000 0.006
+2025-02-19 03:04:34,476 1914 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 03:04:34,477 1914 INFO ? werkzeug: 127.0.0.1 - - [19/Feb/2025 03:04:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - 0 0.000 0.001
+2025-02-19 03:04:36,825 1914 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 03:04:36,826 1914 INFO ? werkzeug: 127.0.0.1 - - [19/Feb/2025 03:04:36] "[33mGET / HTTP/1.1[0m" 404 - 0 0.000 0.001
+2025-02-19 03:07:35,288 425 INFO ? odoo: Odoo version 15.0 
+2025-02-19 03:07:35,289 425 INFO ? odoo: Using configuration file at /home/gtbee/odoo-fitdnu/odoo.conf 
+2025-02-19 03:07:35,289 425 INFO ? odoo: addons paths: ['/home/gtbee/odoo-fitdnu/odoo/addons', '/home/gtbee/.local/share/Odoo/addons/15.0', '/home/gtbee/odoo-fitdnu/addons'] 
+2025-02-19 03:07:35,289 425 INFO ? odoo: database: odoo@localhost:5433 
+2025-02-19 03:07:35,396 425 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-02-19 03:07:35,413 425 CRITICAL ? odoo.modules.module: Couldn't load module base 
+2025-02-19 03:07:35,413 425 CRITICAL ? odoo.modules.module: No module named 'OpenSSL' 
+2025-02-19 03:07:35,413 425 ERROR ? odoo.service.server: Failed to load server-wide module `base`. 
+Traceback (most recent call last):
+  File "/home/gtbee/odoo-fitdnu/odoo/service/server.py", line 1210, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/home/gtbee/odoo-fitdnu/odoo/modules/module.py", line 407, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/__init__.py", line 23, in <module>
+    from . import ir_mail_server
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/ir_mail_server.py", line 19, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2025-02-19 03:07:35,420 425 CRITICAL ? odoo.modules.module: Couldn't load module web 
+2025-02-19 03:07:35,421 425 CRITICAL ? odoo.modules.module: No module named 'OpenSSL' 
+2025-02-19 03:07:35,421 425 ERROR ? odoo.service.server: Failed to load server-wide module `web`.
+The `web` module is provided by the addons found in the `openerp-web` project.
+Maybe you forgot to add those addons in your addons_path configuration. 
+Traceback (most recent call last):
+  File "/home/gtbee/odoo-fitdnu/odoo/service/server.py", line 1210, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/home/gtbee/odoo-fitdnu/odoo/modules/module.py", line 407, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/home/gtbee/odoo-fitdnu/addons/web/__init__.py", line 4, in <module>
+    from . import controllers
+  File "/home/gtbee/odoo-fitdnu/addons/web/controllers/__init__.py", line 4, in <module>
+    from . import main
+  File "/home/gtbee/odoo-fitdnu/addons/web/controllers/main.py", line 34, in <module>
+    from odoo.addons.base.models.ir_qweb import render as qweb_render
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/__init__.py", line 23, in <module>
+    from . import ir_mail_server
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/ir_mail_server.py", line 19, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2025-02-19 03:07:35,426 425 INFO ? odoo.service.server: HTTP service (werkzeug) running on GTBee.localdomain:8069 
+2025-02-19 03:07:49,536 425 INFO ? odoo.http: HTTP Configuring static files 
+2025-02-19 03:07:49,554 425 INFO ? odoo.http: Generating nondb routing 
+2025-02-19 03:07:49,557 425 INFO ? werkzeug: 127.0.0.1 - - [19/Feb/2025 03:07:49] "[33mGET /odoo HTTP/1.1[0m" 404 - 1 0.011 0.008
+2025-02-19 03:07:50,030 425 INFO ? werkzeug: 127.0.0.1 - - [19/Feb/2025 03:07:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - 1 0.001 0.003
+2025-02-19 03:07:55,287 425 INFO ? werkzeug: 127.0.0.1 - - [19/Feb/2025 03:07:55] "[33mGET /odoo HTTP/1.1[0m" 404 - 1 0.002 0.005
+2025-02-19 03:07:55,869 425 INFO ? werkzeug: 127.0.0.1 - - [19/Feb/2025 03:07:55] "[33mGET /odoo HTTP/1.1[0m" 404 - 1 0.002 0.004
+2025-02-19 03:08:13,066 425 INFO ? werkzeug: 127.0.0.1 - - [19/Feb/2025 03:08:13] "[33mGET / HTTP/1.1[0m" 404 - 1 0.002 0.005
+2025-02-19 03:08:15,127 425 INFO ? werkzeug: 127.0.0.1 - - [19/Feb/2025 03:08:15] "[33mGET / HTTP/1.1[0m" 404 - 1 0.002 0.005
+2025-02-19 03:08:15,637 425 INFO ? werkzeug: 127.0.0.1 - - [19/Feb/2025 03:08:15] "[33mGET / HTTP/1.1[0m" 404 - 1 0.002 0.004
+2025-02-19 03:08:15,942 425 INFO ? werkzeug: 127.0.0.1 - - [19/Feb/2025 03:08:15] "[33mGET / HTTP/1.1[0m" 404 - 1 0.001 0.003
+2025-02-19 03:11:43,651 610 INFO ? odoo: Odoo version 15.0 
+2025-02-19 03:11:43,651 610 INFO ? odoo: Using configuration file at /home/gtbee/odoo-fitdnu/odoo.conf 
+2025-02-19 03:11:43,651 610 INFO ? odoo: addons paths: ['/home/gtbee/odoo-fitdnu/odoo/addons', '/home/gtbee/.local/share/Odoo/addons/15.0', '/home/gtbee/odoo-fitdnu/addons'] 
+2025-02-19 03:11:43,651 610 INFO ? odoo: database: odoo@localhost:5433 
+2025-02-19 03:11:43,750 610 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-02-19 03:11:43,759 610 CRITICAL ? odoo.modules.module: Couldn't load module base 
+2025-02-19 03:11:43,759 610 CRITICAL ? odoo.modules.module: No module named 'OpenSSL' 
+2025-02-19 03:11:43,759 610 ERROR ? odoo.service.server: Failed to load server-wide module `base`. 
+Traceback (most recent call last):
+  File "/home/gtbee/odoo-fitdnu/odoo/service/server.py", line 1210, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/home/gtbee/odoo-fitdnu/odoo/modules/module.py", line 407, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/__init__.py", line 23, in <module>
+    from . import ir_mail_server
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/ir_mail_server.py", line 19, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2025-02-19 03:11:43,762 610 CRITICAL ? odoo.modules.module: Couldn't load module web 
+2025-02-19 03:11:43,762 610 CRITICAL ? odoo.modules.module: No module named 'OpenSSL' 
+2025-02-19 03:11:43,762 610 ERROR ? odoo.service.server: Failed to load server-wide module `web`.
+The `web` module is provided by the addons found in the `openerp-web` project.
+Maybe you forgot to add those addons in your addons_path configuration. 
+Traceback (most recent call last):
+  File "/home/gtbee/odoo-fitdnu/odoo/service/server.py", line 1210, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/home/gtbee/odoo-fitdnu/odoo/modules/module.py", line 407, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/home/gtbee/odoo-fitdnu/addons/web/__init__.py", line 4, in <module>
+    from . import controllers
+  File "/home/gtbee/odoo-fitdnu/addons/web/controllers/__init__.py", line 4, in <module>
+    from . import main
+  File "/home/gtbee/odoo-fitdnu/addons/web/controllers/main.py", line 34, in <module>
+    from odoo.addons.base.models.ir_qweb import render as qweb_render
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/__init__.py", line 23, in <module>
+    from . import ir_mail_server
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/ir_mail_server.py", line 19, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2025-02-19 03:11:43,765 610 INFO ? odoo.service.server: HTTP service (werkzeug) running on GTBee.localdomain:8069 
+2025-02-19 03:11:43,765 610 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 03:11:43,766 610 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 03:11:52,590 610 INFO ? odoo.http: HTTP Configuring static files 
+2025-02-19 03:11:52,592 610 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 03:11:52,592 610 INFO ? odoo.http: Generating nondb routing 
+2025-02-19 03:11:52,594 610 INFO ? werkzeug: 127.0.0.1 - - [19/Feb/2025 03:11:52] "[33mGET / HTTP/1.1[0m" 404 - 0 0.000 0.003
+2025-02-19 03:14:36,241 653 INFO ? odoo: Odoo version 15.0 
+2025-02-19 03:14:36,241 653 INFO ? odoo: Using configuration file at /home/gtbee/odoo-fitdnu/odoo.conf 
+2025-02-19 03:14:36,241 653 INFO ? odoo: addons paths: ['/home/gtbee/odoo-fitdnu/odoo/addons', '/home/gtbee/.local/share/Odoo/addons/15.0', '/home/gtbee/odoo-fitdnu/addons'] 
+2025-02-19 03:14:36,241 653 INFO ? odoo: database: odoo@localhost:5433 
+2025-02-19 03:14:36,345 653 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-02-19 03:14:36,355 653 CRITICAL ? odoo.modules.module: Couldn't load module web 
+2025-02-19 03:14:36,355 653 CRITICAL ? odoo.modules.module: No module named 'OpenSSL' 
+2025-02-19 03:14:36,355 653 ERROR ? odoo.service.server: Failed to load server-wide module `web`.
+The `web` module is provided by the addons found in the `openerp-web` project.
+Maybe you forgot to add those addons in your addons_path configuration. 
+Traceback (most recent call last):
+  File "/home/gtbee/odoo-fitdnu/odoo/service/server.py", line 1210, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/home/gtbee/odoo-fitdnu/odoo/modules/module.py", line 407, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/home/gtbee/odoo-fitdnu/addons/web/__init__.py", line 4, in <module>
+    from . import controllers
+  File "/home/gtbee/odoo-fitdnu/addons/web/controllers/__init__.py", line 4, in <module>
+    from . import main
+  File "/home/gtbee/odoo-fitdnu/addons/web/controllers/main.py", line 34, in <module>
+    from odoo.addons.base.models.ir_qweb import render as qweb_render
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/__init__.py", line 23, in <module>
+    from . import ir_mail_server
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/ir_mail_server.py", line 19, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2025-02-19 03:14:36,356 653 CRITICAL ? odoo.modules.module: Couldn't load module base 
+2025-02-19 03:14:36,356 653 CRITICAL ? odoo.modules.module: No module named 'OpenSSL' 
+2025-02-19 03:14:36,356 653 ERROR ? odoo.service.server: Failed to load server-wide module `base`. 
+Traceback (most recent call last):
+  File "/home/gtbee/odoo-fitdnu/odoo/service/server.py", line 1210, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/home/gtbee/odoo-fitdnu/odoo/modules/module.py", line 407, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/__init__.py", line 23, in <module>
+    from . import ir_mail_server
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/ir_mail_server.py", line 19, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2025-02-19 03:14:36,359 653 INFO ? odoo.service.server: HTTP service (werkzeug) running on GTBee.localdomain:8069 
+2025-02-19 03:14:36,359 653 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 03:14:36,360 653 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 03:17:50,618 782 INFO ? odoo: Odoo version 15.0 
+2025-02-19 03:17:50,618 782 INFO ? odoo: Using configuration file at /home/gtbee/odoo-fitdnu/odoo.conf 
+2025-02-19 03:17:50,618 782 INFO ? odoo: addons paths: ['/home/gtbee/odoo-fitdnu/odoo/addons', '/home/gtbee/.local/share/Odoo/addons/15.0', '/home/gtbee/odoo-fitdnu/addons'] 
+2025-02-19 03:17:50,618 782 INFO ? odoo: database: odoo@localhost:5433 
+2025-02-19 03:17:50,716 782 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-02-19 03:17:50,725 782 CRITICAL ? odoo.modules.module: Couldn't load module web 
+2025-02-19 03:17:50,725 782 CRITICAL ? odoo.modules.module: No module named 'OpenSSL' 
+2025-02-19 03:17:50,725 782 ERROR ? odoo.service.server: Failed to load server-wide module `web`.
+The `web` module is provided by the addons found in the `openerp-web` project.
+Maybe you forgot to add those addons in your addons_path configuration. 
+Traceback (most recent call last):
+  File "/home/gtbee/odoo-fitdnu/odoo/service/server.py", line 1210, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/home/gtbee/odoo-fitdnu/odoo/modules/module.py", line 407, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/home/gtbee/odoo-fitdnu/addons/web/__init__.py", line 4, in <module>
+    from . import controllers
+  File "/home/gtbee/odoo-fitdnu/addons/web/controllers/__init__.py", line 4, in <module>
+    from . import main
+  File "/home/gtbee/odoo-fitdnu/addons/web/controllers/main.py", line 34, in <module>
+    from odoo.addons.base.models.ir_qweb import render as qweb_render
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/__init__.py", line 23, in <module>
+    from . import ir_mail_server
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/ir_mail_server.py", line 19, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2025-02-19 03:17:50,727 782 CRITICAL ? odoo.modules.module: Couldn't load module base 
+2025-02-19 03:17:50,727 782 CRITICAL ? odoo.modules.module: No module named 'OpenSSL' 
+2025-02-19 03:17:50,727 782 ERROR ? odoo.service.server: Failed to load server-wide module `base`. 
+Traceback (most recent call last):
+  File "/home/gtbee/odoo-fitdnu/odoo/service/server.py", line 1210, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/home/gtbee/odoo-fitdnu/odoo/modules/module.py", line 407, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/__init__.py", line 23, in <module>
+    from . import ir_mail_server
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/ir_mail_server.py", line 19, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2025-02-19 03:17:50,729 782 INFO ? odoo.service.server: HTTP service (werkzeug) running on GTBee.localdomain:8069 
+2025-02-19 03:17:50,729 782 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 03:17:50,730 782 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 03:19:34,925 839 INFO ? odoo: Odoo version 15.0 
+2025-02-19 03:19:34,925 839 INFO ? odoo: Using configuration file at /home/gtbee/odoo-fitdnu/odoo.conf 
+2025-02-19 03:19:34,925 839 INFO ? odoo: addons paths: ['/home/gtbee/odoo-fitdnu/odoo/addons', '/home/gtbee/.local/share/Odoo/addons/15.0', '/home/gtbee/odoo-fitdnu/addons'] 
+2025-02-19 03:19:34,925 839 INFO ? odoo: database: odoo@localhost:5433 
+2025-02-19 03:19:35,082 839 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2025-02-19 03:19:35,093 839 CRITICAL ? odoo.modules.module: Couldn't load module base 
+2025-02-19 03:19:35,093 839 CRITICAL ? odoo.modules.module: No module named 'OpenSSL' 
+2025-02-19 03:19:35,093 839 ERROR ? odoo.service.server: Failed to load server-wide module `base`. 
+Traceback (most recent call last):
+  File "/home/gtbee/odoo-fitdnu/odoo/service/server.py", line 1210, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/home/gtbee/odoo-fitdnu/odoo/modules/module.py", line 407, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/__init__.py", line 23, in <module>
+    from . import ir_mail_server
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/ir_mail_server.py", line 19, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2025-02-19 03:19:35,098 839 CRITICAL ? odoo.modules.module: Couldn't load module web 
+2025-02-19 03:19:35,098 839 CRITICAL ? odoo.modules.module: No module named 'OpenSSL' 
+2025-02-19 03:19:35,098 839 ERROR ? odoo.service.server: Failed to load server-wide module `web`.
+The `web` module is provided by the addons found in the `openerp-web` project.
+Maybe you forgot to add those addons in your addons_path configuration. 
+Traceback (most recent call last):
+  File "/home/gtbee/odoo-fitdnu/odoo/service/server.py", line 1210, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "/home/gtbee/odoo-fitdnu/odoo/modules/module.py", line 407, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/home/gtbee/odoo-fitdnu/addons/web/__init__.py", line 4, in <module>
+    from . import controllers
+  File "/home/gtbee/odoo-fitdnu/addons/web/controllers/__init__.py", line 4, in <module>
+    from . import main
+  File "/home/gtbee/odoo-fitdnu/addons/web/controllers/main.py", line 34, in <module>
+    from odoo.addons.base.models.ir_qweb import render as qweb_render
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/__init__.py", line 23, in <module>
+    from . import ir_mail_server
+  File "/home/gtbee/odoo-fitdnu/odoo/addons/base/models/ir_mail_server.py", line 19, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2025-02-19 03:19:35,101 839 INFO ? odoo.service.server: HTTP service (werkzeug) running on GTBee.localdomain:8069 
+2025-02-19 03:19:35,101 839 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 03:19:35,102 839 INFO ? odoo.sql_db: Connection to the database failed 
+2025-02-19 03:19:44,501 839 INFO ? odoo.service.server: Initiating shutdown 
+2025-02-19 03:19:44,501 839 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-02-19 03:19:44,615 839 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 0 connections  
